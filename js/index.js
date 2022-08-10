@@ -28,3 +28,18 @@ function Loops(driver, navigator){
 }
 
 Loops(hacker1, navigator)
+
+const array_hacker_driver = [hacker1, navigator]
+
+function Ordering(){
+    array_hacker_driver.sort()
+    if (array_hacker_driver[0] == hacker1){
+        return "The driver's name goes first."
+    }else if(array_hacker_driver[0] == navigator){
+        return "Yo, the navigator goes first definitely."
+    }else{
+        return "What?! You both have the same name?"
+    }
+}
+
+console.log(Ordering())
